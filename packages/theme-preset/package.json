@@ -1,25 +1,27 @@
 {
   "name": "@citrus327/theme-preset",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "",
-  "main": "index.js",
-  "module": "index.esm.js",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.mjs",
   "type": "commonjs",
   "exports": {
     ".": {
-      "require": "./index.js",
-      "import": "./index.esm.js"
+      "require": "./dist/index.js",
+      "import": "./dist/index.esm.mjs"
     },
     "./stylesheet": "./dist/output.css"
   },
   "files": [
-    "index.js",
-    "index.esm.js",
     "dist",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "ReadMe.md"
   ],
   "scripts": {
-    "build": "tailwindcss -i ./style/index.css -o ./dist/output.css"
+    "move": "cp ./index.esm.mjs dist/index.esm.mjs & cp ./index.js dist/index.js",
+    "compile": "tailwindcss -i ./style/index.css -o ./dist/output.css",
+    "build": "npm run move && npm run compile",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [],
   "author": "",
