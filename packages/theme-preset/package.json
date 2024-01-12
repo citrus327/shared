@@ -7,6 +7,11 @@
     ".": "./index.js",
     "./stylesheet": "./dist/output.css"
   },
+  "files": [
+    "index.js",
+    "dist",
+    "CHANGELOG.md"
+  ],
   "scripts": {
     "build": "tailwindcss -i ./style/index.css -o ./dist/output.css"
   },
