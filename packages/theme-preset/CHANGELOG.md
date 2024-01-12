@@ -1,5 +1,11 @@
 # @citrus327/theme-preset
 
+## 2.0.2
+
+### Patch Changes
+
+- 68d714c: remove tailwindcss
+
 ## 2.0.1
 
 ### Patch Changes
