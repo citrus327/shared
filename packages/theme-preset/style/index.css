@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 body,
 html {
   height: 100%;
