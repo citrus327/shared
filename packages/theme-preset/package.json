@@ -1,0 +1,22 @@
+{
+  "name": "@citrus327/theme-preset",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./stylesheet": "./dist/output.css"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./style/index.css -o ./dist/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
