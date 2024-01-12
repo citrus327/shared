@@ -1,5 +1,11 @@
 # @citrus327/theme-preset
 
+## 2.0.1
+
+### Patch Changes
+
+- initial
+
 ## 2.0.0
 
 ### Major Changes
